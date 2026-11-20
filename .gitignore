@@ -1,0 +1,171 @@
+
+# =====================================
+# Python Cache Files
+# =====================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# =====================================
+# Virtual Environments
+# =====================================
+venv/
+env/
+.venv/
+ENV/
+virtualenv/
+.python-version
+
+# =====================================
+# Python Packaging
+# =====================================
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+MANIFEST
+
+# =====================================
+# Jupyter Notebook
+# =====================================
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# =====================================
+# AI / ML Datasets
+# =====================================
+datasets/
+dataset/
+data/
+data/raw/
+data/processed/
+*.csv
+*.tsv
+*.parquet
+*.jsonl
+*.feather
+*.h5
+*.hdf5
+
+# =====================================
+# Machine Learning Models
+# =====================================
+models/
+checkpoints/
+weights/
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+*.keras
+*.h5
+*.safetensors
+*.model
+
+# =====================================
+# Deep Learning Frameworks
+# =====================================
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+runs/
+logs/
+
+# =====================================
+# Hugging Face
+# =====================================
+.cache/huggingface/
+.cache/torch/
+.cache/
+transformers_cache/
+
+# =====================================
+# Environment Variables / Secrets
+# =====================================
+.env
+.env.*
+!.env.example
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# =====================================
+# IDE / Editors
+# =====================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# =====================================
+# Logs / Temporary Files
+# =====================================
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+
+# =====================================
+# Testing / Coverage
+# =====================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# =====================================
+# Type Checking / Linting
+# =====================================
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# =====================================
+# Operating System
+# =====================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# =====================================
+# Node.js (if used in AI/ML projects)
+# =====================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+.pnpm-debug.log*
+
+# =====================================
+# Cloud / Deployment
+# =====================================
+.aws/
+.gcloud/
+.azure/
+terraform.tfstate
+terraform.tfstate.*
+
+# =====================================
+# Generated Files
+# =====================================
+*.bak
+*.orig
+*.old
+*.cache

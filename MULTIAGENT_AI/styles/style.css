@@ -1,0 +1,718 @@
+/* =====================================================
+   ResearchMind AI - Premium SaaS UI
+===================================================== */
+
+
+/* ---------- Global ---------- */
+
+*{
+
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    background:
+    radial-gradient(
+        circle at top left,
+        #1d2455,
+        #050816 60%
+    );
+
+    color:white;
+
+}
+
+
+
+.stApp{
+
+    background:
+
+    radial-gradient(
+        circle at 20% 10%,
+        rgba(99,102,241,0.25),
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at 80% 20%,
+        rgba(168,85,247,0.2),
+        transparent 35%
+    ),
+
+    #050816;
+
+}
+
+
+
+/* Remove Streamlit padding */
+
+.block-container{
+
+    padding-top:2rem;
+
+    padding-left:5%;
+
+    padding-right:5%;
+
+}
+
+
+
+/* =====================================================
+   Navbar
+===================================================== */
+
+
+.navbar{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+    padding:18px 35px;
+
+
+    border-radius:20px;
+
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.15);
+
+
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:800;
+
+}
+
+
+
+.logo span{
+
+    color:#8b5cf6;
+
+}
+
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+    color:#c4b5fd;
+
+    font-size:15px;
+
+}
+
+
+
+
+.nav-links span:hover{
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* =====================================================
+   Hero
+===================================================== */
+
+
+.hero{
+
+
+    text-align:center;
+
+    padding:50px 20px;
+
+
+}
+
+
+
+.badge{
+
+
+    display:inline-block;
+
+
+    padding:10px 20px;
+
+
+    border-radius:30px;
+
+
+    background:
+
+    rgba(139,92,246,0.2);
+
+
+
+    border:
+
+    1px solid rgba(139,92,246,0.4);
+
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.hero h1{
+
+
+    margin-top:30px;
+
+
+    font-size:70px;
+
+
+    font-weight:900;
+
+
+    letter-spacing:-3px;
+
+
+}
+
+
+
+.hero h1 span{
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #8b5cf6,
+        #06b6d4
+    );
+
+
+    -webkit-background-clip:text;
+
+
+    color:transparent;
+
+
+}
+
+
+
+.hero p{
+
+
+    font-size:20px;
+
+
+    color:#cbd5e1;
+
+
+    max-width:800px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+/* =====================================================
+   Cards
+===================================================== */
+
+
+.info-card,
+.agent-card{
+
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+
+    backdrop-filter:
+
+    blur(20px);
+
+
+
+    border-radius:20px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.15);
+
+
+
+    padding:25px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.info-card:hover,
+.agent-card:hover{
+
+
+    transform:
+
+    translateY(-8px);
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.4);
+
+
+}
+
+
+
+
+.agent-card{
+
+
+    text-align:center;
+
+
+    min-height:140px;
+
+
+}
+
+
+
+.agent-card h3{
+
+
+    font-size:18px;
+
+
+}
+
+
+
+.agent-card p{
+
+
+    color:#a5b4fc;
+
+
+}
+
+
+
+/* =====================================================
+   Input
+===================================================== */
+
+
+.stTextInput input{
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.2);
+
+
+
+    border-radius:15px;
+
+
+
+    color:white;
+
+
+    padding:15px;
+
+
+}
+
+
+
+.stTextInput input:focus{
+
+
+    border:
+
+    1px solid #8b5cf6;
+
+
+}
+
+
+
+
+
+/* =====================================================
+   Buttons
+===================================================== */
+
+
+.stButton button{
+
+
+    width:100%;
+
+
+    height:55px;
+
+
+    border-radius:15px;
+
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #7c3aed,
+        #06b6d4
+    );
+
+
+
+    color:white;
+
+
+    font-weight:800;
+
+
+    font-size:17px;
+
+
+    border:none;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.stButton button:hover{
+
+
+    transform:
+
+    scale(1.03);
+
+
+
+    box-shadow:
+
+    0 0 35px rgba(139,92,246,.7);
+
+
+
+}
+
+
+
+
+
+/* =====================================================
+   Tabs
+===================================================== */
+
+
+.stTabs [data-baseweb="tab-list"]{
+
+
+    gap:15px;
+
+
+}
+
+
+
+.stTabs [data-baseweb="tab"]{
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+
+    border-radius:12px;
+
+
+
+    padding:12px 25px;
+
+
+}
+
+
+
+.stTabs [aria-selected="true"]{
+
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #7c3aed,
+    #06b6d4
+    );
+
+
+}
+
+
+
+
+/* =====================================================
+   Metrics
+===================================================== */
+
+
+[data-testid="metric-container"]{
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    animation:
+
+    fadeIn .6s;
+
+
+}
+
+
+
+/* =====================================================
+   Spinner
+===================================================== */
+
+
+.stSpinner > div{
+
+
+    border-top-color:#8b5cf6 !important;
+
+
+}
+
+
+
+
+
+/* =====================================================
+   Progress
+===================================================== */
+
+
+.stProgress > div > div{
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #7c3aed,
+        #06b6d4
+    );
+
+
+}
+
+
+
+
+
+/* =====================================================
+   Animations
+===================================================== */
+
+
+@keyframes fadeIn{
+
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+
+}
+
+
+
+.agent-card{
+
+
+    animation:
+
+    fadeIn .5s ease;
+
+
+}
+
+
+
+/* Running Animation */
+
+
+.running{
+
+
+    animation:
+
+    pulse 1.5s infinite;
+
+
+}
+
+
+
+@keyframes pulse{
+
+
+    0%{
+
+        box-shadow:
+        0 0 0 rgba(139,92,246,0);
+
+    }
+
+
+
+    50%{
+
+        box-shadow:
+
+        0 0 35px rgba(139,92,246,.8);
+
+    }
+
+
+
+    100%{
+
+        box-shadow:
+
+        0 0 0 rgba(139,92,246,0);
+
+    }
+
+
+}
+
+
+
+/* =====================================================
+   Footer
+===================================================== */
+
+
+.footer{
+
+
+    text-align:center;
+
+
+    margin-top:60px;
+
+
+    padding:20px;
+
+
+    color:#94a3b8;
+
+
+    font-size:14px;
+
+
+}
